@@ -89,6 +89,8 @@ public class Club
         ArrayList<Membership> purged = new ArrayList<>();
         if (month < 1 || month > 12) {
             System.out.println("Month " + month + " out of range. Must be in the range 1 ... 12");
+        } else if (year < 1920 || year > 2026) {
+            System.out.println("Year " + year + " out of range. Must be in the range 1920 ... 2026");           
         } else {
             for (Membership member : members) {
                 if ((member.getMonth() == month) && (member.getYear() == year)) {
@@ -107,6 +109,8 @@ public class Club
         ArrayList<Membership> purged = new ArrayList<>();
         if (month < 1 || month > 12) {
             System.out.println("Month " + month + " out of range. Must be in the range 1 ... 12");
+        } else if (year < 1920 || year > 2026) {
+            System.out.println("Year " + year + " out of range. Must be in the range 1920 ... 2026"); 
         } else {
             Iterator<Membership> it = members.iterator();
             while (it.hasNext()) {
